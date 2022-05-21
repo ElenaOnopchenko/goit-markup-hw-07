@@ -1,0 +1,27 @@
+.connect-list {
+  display: flex;
+  margin-left: auto;
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.connect-list__link {
+  color: var(--primary-text-color);
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+  transition: color var(--duration-and-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+  }
+}
+
+.connect-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
